@@ -1,0 +1,56 @@
+body{
+	background-color: #FBB03B;
+}
+
+.container{
+	height: 100vh;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	color: #138073;
+
+	h1{
+		//color: #39B69F;
+		width: 100%;
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=tel]{
+		width: 40vw;
+		height: 50px;
+		padding-left: 15px; 
+
+		&::placeholder{
+			color: #39B69F;
+		}
+	}
+
+	span{
+		text-decoration: underline;
+	}
+	
+	button{
+		background-color: #39B69F;
+		color: white;
+		border: 1px solid white;
+		width: 250px;
+		height: 60px;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	h1{
+		text-align: right;
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=tel]{
+		width: 80vw !important;
+	}
+}

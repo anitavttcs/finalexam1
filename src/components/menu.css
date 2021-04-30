@@ -1,0 +1,101 @@
+#hambi {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 0;
+  background-color: #138073;
+  /* transition: all 0.5s ease-in-out; */
+  Z-index: 9999;
+}
+
+#hambi.open {
+  background-color: #39B69F;
+}
+
+#hambi:hover {
+  background-color: #39B69F;
+  cursor: pointer;
+}
+
+#hambi .hambiLine {
+  width: 40px;
+  height: 6px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+}
+
+#hambi .hambiLine#hL1 {
+  top: 22px;
+}
+
+#hambi .hambiLine#hL2 {
+  top: 28px;
+}
+
+#hambi .hambiLine#hL3 {
+  top: 34px;
+}
+
+#hambiMenu {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+#hambiMenu .hambiMenuItem {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px;
+}
+
+#hambiMenu .hambiMenuItem a {
+  color: black;
+  text-decoration: none;
+}
+
+#hambiMenu .hambiMenuItem a:hover {
+  color: #e4bc0a;
+}
+
+@media screen and (max-width: 600px) {
+  #hambi {
+    width: 60px;
+    height: 60px;
+  }
+  #hambi .hambiLine {
+    width: 30px;
+    height: 3px;
+  }
+  #hambi .hambiLine#hL1 {
+    top: 18px;
+  }
+  #hambi .hambiLine#hL2 {
+    top: 24px;
+  }
+  #hambi .hambiLine#hL3 {
+    top: 30px;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
